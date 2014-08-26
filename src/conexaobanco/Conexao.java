@@ -39,12 +39,22 @@ import java.sql.SQLException; // classe para tratamento de exceções
 public class Conexao{
 
 	private final String Bd = "xe";
-	private final String ConnString = "jdbcoracle:thin:@//10.1.0.40:1521/" + Bd;
+	private final String ConnString = "jdbc:oracle:thin:@10.1.0.40:1521." + Bd;
 	private final String User = "Login";
 	private final String Pass = "Senha";
 	private Connection connection;
 	
 	private static  Conexao instance;
+
+    public String getUser() {
+        return User;
+    }
+
+    public String getPass() {
+        return Pass;
+    }
+
+       
 	
 	public static Conexao getInstance(){
 		if (instance == null){

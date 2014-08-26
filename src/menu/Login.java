@@ -94,7 +94,7 @@ public class Login extends javax.swing.JFrame {
         // TODO add your handling code here:
         String Login = jTextField1.getText();
         String Senha = jPasswordField1.getText();
-        if ((Login.equals("a")) && (Senha.equals("a"))){
+        if ((Login.equals(conexaobanco.Conexao.())) && (Senha.equals(conexaobanco.Conexao.getPass()))){
             Menu AcessaMenu = new Menu();
             AcessaMenu.setLocationRelativeTo(null);
             Login.this.dispose();

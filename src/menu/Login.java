@@ -4,7 +4,10 @@
  * and open the template in the editor.
  */
 
-package sistema;
+package menu;
+
+import java.sql.*;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -89,6 +92,15 @@ public class Login extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        String Login = jTextField1.getText();
+        String Senha = jPasswordField1.getText();
+        if ((Login.equals("a")) && (Senha.equals("a"))){
+            Menu AcessaMenu = new Menu();
+            AcessaMenu.setLocationRelativeTo(null);
+            Login.this.dispose();
+        }else {
+            JOptionPane.showMessageDialog(null, "Login ou Senha incorreta");
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

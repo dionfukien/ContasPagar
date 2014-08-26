@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package sistema;
+package menu;
 
 /**
  *
@@ -38,6 +38,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("MENU");
 
         jButton1.setText("Novas Notas");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -57,8 +58,6 @@ public class Menu extends javax.swing.JFrame {
         jButton6.setText("Finalização");
 
         jButton7.setText("Atualização");
-
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Carina\\Desktop\\SV.jpg")); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
